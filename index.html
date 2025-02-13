@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de IMC</h1>
+    </header>
+    <section>
+        <h2>O que é o IMC?</h2>
+        <p>O Índice de Massa Corporal (IMC) é uma fórmula simples utilizada para avaliar se uma pessoa está com o peso adequado em relação à sua altura. Ele é um dos métodos mais comuns para identificar se alguém está com o peso saudável, com sobrepeso, ou até mesmo com obesidade.</p>
+        <p>O cálculo do IMC é feito dividindo o peso da pessoa (em quilogramas) pela altura (em metros) ao quadrado. Essa fórmula ajuda a classificar o estado nutricional de uma pessoa, fornecendo uma base para avaliar se ela está dentro de uma faixa de peso saudável.</p>
+    </section>
+    <section>
+        <h2>Como o IMC é Calculado?</h2>
+        <p>O cálculo do IMC segue a fórmula: <br>
+        <strong>IMC = Peso/Altura<sup>2</sup></strong>
+        </p>
+        <p>Por exemplo uma pessoa pesa 80 kg e tem altura de 1,75 metros, o calculo seria: <br>
+        <strong>IMC = 80/1,75<sup>2</sup> = 26.12</strong>
+        </p>
+    </section>
+    <section>
+        <h2>Tabela IMC</h2>
+        <table>
+            <thead>
+             <tr>
+                <th>Faixa de IMC</th>
+                <th>Categoria</th>
+                <th>Descrição</th>
+             </tr>
+            </thead>
+            <tr class="baixoIMC">
+                <th>Abaixo de 18.5</th>
+                <td>Abaixo do peso</td>
+                <td>Indica que a pessoa tem um peso inferior ao ideal para a sua altura, o que pode levar a deficiências nutricionais e problemas de saúde.</td>
+            </tr>
+            <tr class="normalIMC">
+                <th>18.5 - 24.9</th>
+                <td>Peso saudável</td>
+                <td>Considerado o peso adequado para a altura da pessoa, com baixo risco de doenças relacionadas ao peso.</td>
+            </tr>
+            <tr class="sobrepesoIMC">
+                <th>25 - 29,9</th>
+                <td>Sobrepeso</td>
+                <td>Indica que a pessoa tem um peso superior ao ideal, o que pode aumentar o risco de doenças como hipertensão, diabetes e problemas cardíacos.</td>
+            </tr>
+            <tr class="obesidadeIMC">
+                <th>30 - 39,9</th>
+                <td>Obesidade</td>
+                <td>O excesso de peso pode levar a sérios problemas de saúde, como doenças cardíacas, diabetes tipo 2 e apneia do sono.</td>
+            </tr>
+            <tr class="obGraveIMC">
+                <th>Acima de 40</th>
+                <td>Obesidade grave (ou mórbida)</td>
+                <td>Indica um risco muito alto de problemas de saúde, podendo afetar seriamente a qualidade de vida e aumentar o risco de morte precoce.</td>
+            </tr>
+        </table>
+
+    </section> 
+    <section class="test">
+        <h2>Calculadora IMC</h2>
+        <form class="form">
+            <label for="">Digite seu peso:</label>
+            <input type="number" step="0.01" placeholder="Ex:80.00" id="inputPeso" required>
+            <label for="">Digite sua altura:</label>
+            <input type="number" step="0.01" placeholder="Ex:1.80" id="inputAltura" required>
+            <button>Calcular</button>
+        </form>
+        <p class="resultado"></p>
+    </section>  
+    <script src="asset/js/script.js"></script>
+</body>
+</html>
