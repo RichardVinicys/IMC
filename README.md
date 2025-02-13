@@ -1,0 +1,1 @@
+Este projeto é um site interativo que permite calcular o Índice de Massa Corporal (IMC) de forma simples e eficiente. O objetivo é ajudar os usuários a entenderem melhor a relação entre seu peso e altura.
